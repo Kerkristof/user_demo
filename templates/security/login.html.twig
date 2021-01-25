@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Log in!{% endblock %}
+
+{% block body %}
+<div class="login-container">
+  <div class="row">
+    <div class="col-2">
+      <img src="{{asset("assets/images/icones/icon.jpg")}}" width="80%" alt="masque">
+    </div>
+    <div class="col-10">
+      <h3>Connexion à votre espace abonné</h3>
+    </div>
+  </div>
+  <hr>
+  <form method="post">
+    {% if error %}
+    <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {% endif %}
+
+    {% if app.user %}
+    <div class="mb-3">
+      You are logged in as {{ app.user.username }}, <a href="{{ path('app_logout') }}">Logout</a>
+    </div>
+    {% endif %}
+
+    <input placeholder="Votre email..." type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" required autofocus>
+    <br>
+    <input placeholder="Votre mot de passe..." type="password" name="password" id="inputPassword" class="form-control" required>
+    <br>
+    <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+
+    <button class="btn btn-dark" type="submit"><small><i>Connexion</i></small></button>
+  </form>
+  <a class="link" href="{{path('app_forgot_password_request')}}">Réinitialiser mon mot de passe</a>
+</div>
+{% endblock %}

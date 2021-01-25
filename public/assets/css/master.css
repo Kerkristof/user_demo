@@ -1,0 +1,18 @@
+.login-container{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  width: 50%;
+  padding: 40px;
+  border-style: solid;
+  border-color: rgb(230, 230, 230);
+  border-radius: 10px;
+  background-color: rgb(240,240,240);
+}
+
+.link{
+  text-decoration: none;
+  color:Navy;
+  font-style: italic;
+  font-size: 0.8rem;
+}

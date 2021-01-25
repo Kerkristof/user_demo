@@ -1,0 +1,7 @@
+  {{ form_start(form) }}
+  {{ form_row(form.title, {'label':'Titre', 'attr':{'class':'form-control', 'placeholder':'Titre de l\'article...'}}) }}
+  <br>
+  {{ form_row(form.content, {'label':'Contenu de l\'article', 'attr':{'class':'form-control', 'placeholder':'Contenu de votre article...'}}) }}
+  <br>
+  <button class="btn btn-dark"><i><small>{{ button_label|default('Save') }}</small></i></button>
+  {{ form_end(form) }}

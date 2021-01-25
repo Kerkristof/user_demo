@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+
+  {% for message in app.flashes('success') %}
+      <div class="alert alert-success" role="alert">{{ message }}</div>
+  {% endfor %}
+
+  <ul>
+    {% for user in users %}
+
+      <li>{{user.id}} / {{user.email}} / {{user.isVerified}} / {{user.password}}</li>
+
+    {% endfor %}
+  </ul>
+
+
+{% endblock %}
