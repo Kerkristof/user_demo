@@ -190,3 +190,8 @@ a7e0b3,127.0.0.1,GET,http://localhost:4000/articles/delete/3,1611268089,,404
 ade232,127.0.0.1,GET,http://localhost:4000/articles/3,1611268269,,200
 dda753,127.0.0.1,DELETE,http://localhost:4000/articles/3,1611268312,,302
 e5a1b6,127.0.0.1,GET,http://localhost:4000/articles/,1611268312,,200
+e326c0,127.0.0.1,GET,http://localhost:4000/,1611579181,,200
+18cce1,127.0.0.1,GET,http://localhost:4000/register,1611579200,,200
+650efd,127.0.0.1,GET,http://localhost:4000/register,1611579228,5204dd,500
+5204dd,127.0.0.1,POST,http://localhost:4000/register,1611579228,,500
+7502d4,127.0.0.1,GET,http://localhost:4000/,1611579249,,200
