@@ -195,3 +195,6 @@ e326c0,127.0.0.1,GET,http://localhost:4000/,1611579181,,200
 650efd,127.0.0.1,GET,http://localhost:4000/register,1611579228,5204dd,500
 5204dd,127.0.0.1,POST,http://localhost:4000/register,1611579228,,500
 7502d4,127.0.0.1,GET,http://localhost:4000/,1611579249,,200
+ec033c,127.0.0.1,GET,http://localhost:3000/,1611650816,,200
+557173,127.0.0.1,GET,http://localhost:3000/register,1611650830,,200
+c6c02c,127.0.0.1,GET,http://localhost:3000/,1611653888,,200
